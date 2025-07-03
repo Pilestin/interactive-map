@@ -4,7 +4,7 @@ Bu proje, Leaflet.js tabanlı interaktif bir harita uygulamasıdır. Kullanıcı
 
 
 
-<img src="assets/image.png" alt="Uygulama Ekran Görüntüsü" width="600">
+<img src="src/assets/image.png" alt="Uygulama Ekran Görüntüsü" width="600">
 
 ## Özellikler
 
