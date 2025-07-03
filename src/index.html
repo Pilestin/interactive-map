@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Route Drawing Map</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Leaflet Draw CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Drawing Controls Panel -->
+    <div class="drawing-controls">
+        <h3>Çizim Kontrolleri</h3>
+        
+        <div class="control-group">
+            <label for="color-picker">Renk:</label>
+            <input type="color" id="color-picker" value="#ff0000">
+        </div>
+        
+        <div class="control-group">
+            <label for="line-style">Çizgi Stili:</label>
+            <select id="line-style">
+                <option value="solid">Düz Çizgi</option>
+                <option value="dashed">Kesikli Çizgi</option>
+                <option value="dotted">Noktalı Çizgi</option>
+            </select>
+        </div>
+        
+        <div class="control-group">
+            <label for="line-width">Çizgi Kalınlığı:</label>
+            <input type="range" id="line-width" min="2" max="10" value="4">
+            <span id="width-value">4</span>px
+        </div>
+        
+        <div class="button-group">
+            <button id="point-mode" class="control-btn">Point Ekle</button>
+            <button id="route-mode" class="control-btn">Rota Çiz</button>
+            <button id="undo-btn" class="control-btn warning">Geri Al</button>
+            <button id="clear-all" class="control-btn danger">Temizle</button>
+            <button id="save-routes" class="control-btn success">Kaydet</button>
+        </div>
+        
+        <div class="instructions">
+            <small>
+                <strong>Kısayollar:</strong><br>
+                Ctrl+P: Point modu<br>
+                Ctrl+R: Rota modu<br>
+                Ctrl+Z: Geri al<br>
+                Enter: Rotayı bitir<br>
+                Esc: Modu kapat<br>
+                Ctrl+S: Kaydet
+            </small>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Leaflet Draw JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+    
+    <!-- Your custom scripts -->
+    <script src="js/map.js"></script>
+    <script src="js/route-manager.js"></script>
+    <script src="js/drawing-controls.js"></script>
+</body>
+</html>
