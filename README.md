@@ -1,9 +1,8 @@
 # İnteraktif Harita Çizim Uygulaması
 
+**[English Version →](#interactive-map-drawing-application)**
+
 Bu proje, Leaflet.js tabanlı interaktif bir harita uygulamasıdır. Kullanıcılar harita üzerinde noktalar ekleyebilir, rotalar çizebilir ve çizimlerini kaydedebilir.
-
-
-
 
 <img src="src/assets/app.png" alt="Uygulama Ekran Görüntüsü" width="600">
 
@@ -48,29 +47,44 @@ Bu proje, Leaflet.js tabanlı interaktif bir harita uygulamasıdır. Kullanıcı
 - `Enter`: Mevcut rotayı bitirme
 - `Esc`: Aktif modu kapatma
 
-### Kontrol Paneli
+---
 
-Harita sol tarafında bulunan kontrol paneli aşağıdaki seçenekleri sunar:
+# Interactive Map Drawing Application
 
-- **Renk Seçici**: Çizim rengi belirleme
-- **Çizgi Stili**: Düz, kesikli veya noktalı çizgi seçimi
-- **Çizgi Kalınlığı**: 2-10px arası kalınlık ayarı
-- **Mod Butonları**: Point ekleme ve rota çizme modları
-- **İşlem Butonları**: Geri alma, temizleme ve kaydetme
+This project is an interactive map application based on Leaflet.js. Users can add points, draw routes, and save their drawings on the map.
 
-## Teknik Detaylar
+<img src="src/assets/app.png" alt="Application Screenshot" width="600">
 
-### Bağımlılıklar
+## 🌐 Live Application
 
-- [Leaflet.js 1.9.4](https://leafletjs.com/) - Harita kütüphanesi
-- [Leaflet.draw 1.0.4](https://github.com/Leaflet/Leaflet.draw) - Çizim araçları
+**[Try the Application →](https://pilestin.github.io/interactive-map/src/index.html)**
 
+## Features
 
+- **Interactive Map**: CartoDB Light, OpenStreetMap, CartoDB Dark, and Satellite layers
+- **Add Points**: Markers in different colors
+- **Draw Routes**: Customizable line styles (solid, dashed, dotted)
+- **Color Picker**: Custom colors with a hex color picker
+- **Line Thickness**: Adjustable thickness between 2-10px
+- **Undo**: Undo the last actions
+- **Save/Load**: Save drawings to localStorage or as a JSON file
+- **Keyboard Shortcuts**: Quick access with keyboard support
 
-## Katkıda Bulunma
+## Usage
 
-Bu proje açık kaynak kodludur. katkıda bulunabilirsiniz. 
+### Basic Operations
 
-## Lisans
+1. **Add Points**: Click the "Add Point" button or use Ctrl+P
+2. **Draw Routes**: Click the "Draw Route" button or use Ctrl+R
+3. **Change Color**: Use the color picker to change the drawing color
+4. **Select Style**: Choose a line style (solid, dashed, dotted) from the dropdown
+5. **Adjust Thickness**: Use the slider to set line thickness between 2-10px
 
-Bu proje eğitim amaçlı geliştirilmiştir ve açık kaynak kullanım için uygundur.
+### Keyboard Shortcuts
+
+- `Ctrl+P`: Point mode
+- `Ctrl+R`: Route drawing mode
+- `Ctrl+Z`: Undo
+- `Ctrl+S`: Save drawings
+- `Enter`: Finish the current route
+- `Esc`: Exit the active mode

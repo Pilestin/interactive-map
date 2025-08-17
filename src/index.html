@@ -29,45 +29,45 @@
 <body>
     <!-- Drawing Controls Panel -->
     <div class="drawing-controls">
-        <h3>Çizim Kontrolleri</h3>
+        <h3>Drawing Controls</h3>
         
         <div class="control-group">
-            <label for="color-picker">Renk:</label>
+            <label for="color-picker">Color:</label>
             <input type="color" id="color-picker" value="#ff0000">
         </div>
         
         <div class="control-group">
-            <label for="line-style">Çizgi Stili:</label>
+            <label for="line-style">Line Style:</label>
             <select id="line-style">
-                <option value="solid">Düz Çizgi</option>
-                <option value="dashed">Kesikli Çizgi</option>
-                <option value="dotted">Noktalı Çizgi</option>
+                <option value="solid">Solid Line</option>
+                <option value="dashed">Dashed Line</option>
+                <option value="dotted">Dotted Line</option>
             </select>
         </div>
         
         <div class="control-group">
-            <label for="line-width">Çizgi Kalınlığı:</label>
+            <label for="line-width">Line Thickness:</label>
             <input type="range" id="line-width" min="2" max="10" value="4">
             <span id="width-value">4</span>px
         </div>
         
         <div class="button-group">
-            <button id="point-mode" class="control-btn">Point Ekle</button>
-            <button id="route-mode" class="control-btn">Rota Çiz</button>
-            <button id="undo-btn" class="control-btn warning">Geri Al</button>
-            <button id="clear-all" class="control-btn danger">Temizle</button>
-            <button id="save-routes" class="control-btn success">Kaydet</button>
+            <button id="point-mode" class="control-btn">Add Point</button>
+            <button id="route-mode" class="control-btn">Draw Route</button>
+            <button id="undo-btn" class="control-btn warning">Undo</button>
+            <button id="clear-all" class="control-btn danger">Clear</button>
+            <button id="save-routes" class="control-btn success">Save</button>
         </div>
         
         <div class="instructions">
             <small>
-                <strong>Kısayollar:</strong><br>
-                Ctrl+P: Point modu<br>
-                Ctrl+R: Rota modu<br>
-                Ctrl+Z: Geri al<br>
-                Enter: Rotayı bitir<br>
-                Esc: Modu kapat<br>
-                Ctrl+S: Kaydet
+                <strong>Shortcuts:</strong><br>
+                Ctrl+P: Point mode<br>
+                Ctrl+R: Route mode<br>
+                Ctrl+Z: Undo<br>
+                Enter: Finish route<br>
+                Esc: Exit mode<br>
+                Ctrl+S: Save
             </small>
         </div>
     </div>
